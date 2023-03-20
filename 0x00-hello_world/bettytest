@@ -1,0 +1,13 @@
+#include <stdio.h>
+/**
+ * main - A program that prints a line with a puts function
+ * Return: @ (Success)
+ */
+int main(void)
+{
+if a > b
+{
+  return (a);
+}
+
+}
