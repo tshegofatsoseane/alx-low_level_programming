@@ -24,5 +24,5 @@ char *_strstr(char *haystack, char *needle)
 			return (haystack + i);
 		}
 	}
-	return (NULL);
+	return (0);
 }
