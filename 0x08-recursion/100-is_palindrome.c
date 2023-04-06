@@ -4,6 +4,7 @@
 /**
  * is_palindrome - checks to see if a string is a palindrome
  * @s: pointer to input string
+ * Return: Palindrome
  */
 int is_palindrome(char *s)
 {
