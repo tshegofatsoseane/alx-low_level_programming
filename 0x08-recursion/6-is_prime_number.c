@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * is_prime_number: returns 1 if the input integer is a prime number, else 0
+ * is_prime_number - returns one if the input is a prime number.
  * @n: input.
- * Return output
+ * Return: output
  */
 
 int is_prime_number(int n)
@@ -17,7 +17,7 @@ int is_prime_number(int n)
 }
 
 /**
- * the_prime: calculates if a number is a prime number
+ * the_prime - calculates if a number is a prime number
  * @n: input
  * @k: iteration
  * Return: result
