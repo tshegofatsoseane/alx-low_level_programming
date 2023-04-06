@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * factorial - compute the factorial of a given number
  * @n: the number to compute the factorial of
@@ -7,19 +8,16 @@
  */
 int factorial(int n)
 {
-	int result = 1;
-	int i;
-
 	if (n < 0)
 	{
 		return (-1);
+		printf("Error");
 	}
 
-
-	for (i = 1; i <= n; i++)
+	if (n == 0)
 	{
-		result *= i;
+		return (1);
 	}
 
-	return (result);
+	return (n * factorial(n - 1));
 }
