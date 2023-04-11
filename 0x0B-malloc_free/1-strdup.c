@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * create_array - create array of size size and assign char c
+ * _strdup - create array of size size and assign char c
  * @str: string given as a parameter.
  * Return: a pointer to a newly allocated space in memory
  */
