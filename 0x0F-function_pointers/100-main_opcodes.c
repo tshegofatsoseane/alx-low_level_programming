@@ -8,36 +8,35 @@
  * Return: Always 0 (Success)
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
+	int bytes, i;
+	char *arr;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
+		exit(1);
 	}
 
-	int num_bytes = atoi(argv[1]);
+		bytes = atoi(argv[1]);
 
-	if (num_bytes < 0)
+	if (bytes < 0)
 	{
 		printf("Error\n");
-		return (2);
+		exit(2);
 	}
 
-	char *start = (char *)main;
+		arr = (char *)main;
 
-	print_opcodes(start, num_bytes);
-
-	return (0);
-}
-
-void print_opcodes(char *start, int count)
-{
-	int i;
-
-	for (i = 0; i < count; i++)
+	for (i = 0; i < bytes; i++)
 	{
-		printf("%02x", *(unsigned char *)(start + i));
+		if (i == bytes - 1)
+		{
+			printf("%02hhx\n", arr[i]);
+			break;
+		}
+		printf("%02hhx ", arr[i]);
 	}
-	printf("\n");
+	return (0);
 }
