@@ -1,5 +1,6 @@
-#include "lists.h"
 #include <stdio.h>
+#include "lists.h"
+
 /**
  * print_list - displays a singly linked list
  * @h: Head of the linked list
