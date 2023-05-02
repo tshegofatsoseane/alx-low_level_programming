@@ -5,16 +5,15 @@
 #include <stdio.h>
 
 /**
- * struct listint_s - a function that prints all the elements of a singly linked list
- * @n: int
- * @next: poiter to next node
- * Description: singly linked list node structure
+ * struct listint_s - singly linked list
+ * @n: integer
+ * @next: points to the next node
+ * Description: singly linked list node data structure
  */
-
 typedef struct listint_s
 {
-	struct listint_s *next;
-	int n;
+    int n;
+    struct listint_s *next;
 } listint_t;
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
