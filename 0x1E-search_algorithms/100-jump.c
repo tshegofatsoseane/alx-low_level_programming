@@ -1,4 +1,5 @@
 #include "search_algos.h"
+
 /**
   * jump_search - Func to search for a value in a sorted array
   * @array: A pointer
@@ -34,3 +35,4 @@ int jump_search(int *array, size_t size, int value)
 	printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 
 	return (array[i] == value ? (int)i : -1);
+}
